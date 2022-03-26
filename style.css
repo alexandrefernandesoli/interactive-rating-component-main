@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  background: hsl(216, 12%, 8%);
+  color: white;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  max-width: 400px;
+  background: hsl(213, 19%, 18%);
+  padding: 2rem 1.8rem;
+  border-radius: 2rem;
+}
+
+main #thanks-container {
+  width: 100%;
+  text-align: center;
+}
+
+main #rating-container img {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.8rem;
+  border-radius: 50%;
+  margin-bottom: 1.6rem;
+}
+
+main #thanks-container img {
+  width: 150px;
+  margin-bottom: 2rem;
+}
+
+#rating-display {
+  text-align: center;
+  width: fit-content;
+  color: hsl(25, 97%, 53%);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 2rem;
+  padding: 0.3rem 1rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  font-size: 14px;
+}
+
+main h1 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+}
+
+main #thanks-container p {
+  text-align: center;
+}
+
+main #thanks-container h1 {
+  text-align: center;
+}
+
+main p {
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+  font-weight: 400;
+  margin-bottom: 1.6rem;
+  line-height: 1.6;
+}
+
+main .rating {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 1.6rem;
+  justify-content: space-between;
+}
+
+main .rating .option {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: hsl(217, 12%, 63%);
+  transition: all 0.2s ease-in-out;
+  font-weight: 700;
+}
+
+main .rating .option:hover {
+  background: hsl(216, 12%, 54%);
+  color: white;
+}
+
+main .rating .option.active {
+  background: hsl(25, 97%, 53%);
+  color: white;
+}
+
+main button {
+  border: none;
+  width: 100%;
+  background: hsl(25, 97%, 53%);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0.7rem 0;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-weight: 700;
+}
+
+main button:hover {
+  background: white;
+  color: hsl(25, 97%, 53%);
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0 20px;
+  }
+}
